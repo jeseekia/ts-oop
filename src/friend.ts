@@ -7,6 +7,7 @@ interface Friend { //Interface is only a definition
 }
 export default Friend;
 
+//Example of how to define a friend inline
 const lilly: Friend = {
     name: "Lilly",
     greet(greeting: string): void { //must implement the greet function
@@ -27,4 +28,4 @@ const billy: Friend = {
     }
 }
 
-let humanfriend: HumanFriend = new HumanFriend("Jeseekia");
+let humanfriend: Friend = new HumanFriend("Jeseekia");

@@ -5,11 +5,14 @@ class HumanFriend implements Friend {
     constructor(name: string) {
         this.name = name;
     }
-    greet(greeting: string): void {
+    greet(greeting: string): void { //required by interface
         console.log(`${greeting} ${this.name}`);
     };
-    getInitial(): string {
+    getInitial(): string { //required by interface
         return this.name.charAt(0);
+    };
+    getName(): string { //class method
+        return this.name;
     }
 }
 export default HumanFriend;
